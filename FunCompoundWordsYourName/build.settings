@@ -1,0 +1,34 @@
+-- Supported values for orientation:
+-- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
+
+settings = {
+	
+	orientation = {
+		default = "landscapeRight",
+		supported = { "landscapeRight", }
+	},
+	
+	iphone = {
+		plist = {
+			CFBundleIdentifier = "ca.immaculata.Fun-Compound-Words",	
+
+			UIStatusBarHidden = false,
+			UIPrerenderedIcon = true, 
+			UIApplicationExitsOnSuspend = false, 
+
+            CFBundleIconFiles = 
+			{
+				"AppLogo"
+			}
+		}
+	},
+	
+	--[[
+	-- Android permissions
+
+	androidPermissions = {
+  		"android.permission.INTERNET",
+  	},
+
+	]]--
+}
