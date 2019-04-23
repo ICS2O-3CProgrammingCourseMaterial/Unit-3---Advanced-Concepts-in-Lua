@@ -81,7 +81,7 @@ local questionsAnswered = 0
 -- When right arrow is touched, move character right
 local function right (touch)
     motionx = SPEED
-    character.xScale = -1
+    character.xScale = 1
 end
 
 -- When up arrow is touched, add vertical so it can jump
